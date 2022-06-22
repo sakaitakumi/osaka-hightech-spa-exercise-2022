@@ -17,8 +17,9 @@
 <body>
   <div id="app">
     <!-- TODO: この中に State を利用した HTML を書く -->
-    <span v-for="estate in estates">
-      <input type="checkbox" id="e1"><label for="e1">{{estate}}</label>
+    <span v-for="(estate, index) in estates">
+      <input type="checkbox" v-bind:id="'e'+index">
+      <label v-bind:for="'e'+index">{{estate}}</label>
     </span>
   </div>
 </body>
