@@ -60,18 +60,3 @@ const ListRendering = {
 }
   
 Vue.createApp(ListRendering).mount('#list-rendering')
-
-const TodoItem = {
-    template: `<li>This is a todo</li>`
-}
-  
-// Vue アプリケーションを生成する
-const app = Vue.createApp({
-    components: {
-      TodoItem // 新しいコンポーネントを登録する
-    },
-... // その他のコンポーネントのプロパティ
-})
-  
-// Vue アプリケーションをマウントする
-app.mount(...)
