@@ -28,6 +28,11 @@
     <p>{{ message }}</p>
     <button v-on:click="reverseMessage">Reverse Message</button>
   </div>
+
+  <div id="two-way-binding">
+    <p>{{ message }}</p>
+    <input v-model="message" />
+  </div>
 </body>
 
 <!-- 独自 JavaScript の読み込み -->
