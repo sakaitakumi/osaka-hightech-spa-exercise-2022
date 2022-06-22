@@ -16,6 +16,13 @@
   <div id="counter">
     Counter: {{ counter }}
   </div>
+
+  <div id="bind-attribute">
+    <span v-bind:title="message">
+      Hover your mouse over me for a few seconds to see my dynamically bound
+      title!
+    </span>
+  </div>
 </body>
 
 <!-- 独自 JavaScript の読み込み -->
