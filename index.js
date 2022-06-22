@@ -1,20 +1,4 @@
 // TODO: 公式リファレンスに沿って JavaScript を記述
-const Counter = {
-    data() {
-      return {
-        counter: 0
-      }
-    },
-    mounted() {
-        setInterval(() => {
-          this.counter++
-        }, 1000)
-    }
-}
-
-  
-Vue.createApp(Counter).mount('#counter')
-
 const AttributeBinding = {
     data() {
       return {
@@ -76,3 +60,18 @@ const ListRendering = {
 }
   
 Vue.createApp(ListRendering).mount('#list-rendering')
+
+const TodoItem = {
+    template: `<li>This is a todo</li>`
+}
+  
+// Vue アプリケーションを生成する
+const app = Vue.createApp({
+    components: {
+      TodoItem // 新しいコンポーネントを登録する
+    },
+... // その他のコンポーネントのプロパティ
+})
+  
+// Vue アプリケーションをマウントする
+app.mount(...)
