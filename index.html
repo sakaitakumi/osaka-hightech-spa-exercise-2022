@@ -16,11 +16,26 @@
 
 <body>
   <div id="app">
+    <h2>都道府県</h2>
     <!-- TODO: この中に State を利用した HTML を書く -->
     <span v-for="(estate, index) in estates">
       <input type="checkbox" v-bind:id="'e'+index">
       <label v-bind:for="'e'+index">{{estate}}</label>
     </span>
+
+    <h2>人口グラフ</h2>
+    <div class="container">
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+     <div class="item"></div>
+    </div>
   </div>
 </body>
 
