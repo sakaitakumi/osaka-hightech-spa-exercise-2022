@@ -1,6 +1,4 @@
 // TODO: 公式リファレンスに沿って JavaScript を記述
-Vue.createApp(EventHandling).mount('#event-handling')
-
 const TwoWayBinding = {
     data() {
       return {
