@@ -9,23 +9,23 @@ const Counter = {
         setInterval(() => {
           this.counter++
         }, 1000)
-      }
     }
+}
 
   
-  Vue.createApp(Counter).mount('#counter')
+Vue.createApp(Counter).mount('#counter')
 
-  const AttributeBinding = {
+const AttributeBinding = {
     data() {
       return {
         message: 'You loaded this page on ' + new Date().toLocaleString()
       }
     }
-  }
+}
   
-  Vue.createApp(AttributeBinding).mount('#bind-attribute')
+Vue.createApp(AttributeBinding).mount('#bind-attribute')
 
-  const EventHandling = {
+const EventHandling = {
     data() {
       return {
         message: 'Hello Vue.js!'
@@ -39,17 +39,26 @@ const Counter = {
           .join('')
       }
     }
-  }
+}
   
-  Vue.createApp(EventHandling).mount('#event-handling')
+Vue.createApp(EventHandling).mount('#event-handling')
 
-  const TwoWayBinding = {
+const TwoWayBinding = {
     data() {
       return {
         message: 'Hello Vue!'
       }
     }
-  }
+}
   
-  Vue.createApp(TwoWayBinding).mount('#two-way-binding')
+Vue.createApp(TwoWayBinding).mount('#two-way-binding')
   
+const ConditionalRendering = {
+    data() {
+      return {
+        seen: true
+      }
+    }
+}
+  
+Vue.createApp(ConditionalRendering).mount('#conditional-rendering')
