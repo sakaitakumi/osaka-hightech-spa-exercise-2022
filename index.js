@@ -70,7 +70,6 @@ const PopulationBarPlot = {
   },
   /* html */
   template: `
-  <div>{{ result }}</div>
   <button v-on:click="updateGraph">更新</button>
   <div class="container">
     <div
