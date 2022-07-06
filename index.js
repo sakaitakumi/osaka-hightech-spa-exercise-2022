@@ -87,11 +87,11 @@ const PopulationBarPlot = {
 
       foo = foo['result']['data'][0]['data'];
 
-      for(const X of foo){
+      for(const X of xs){
         console.log(X.value);
       }
 
-      this.result = foo;
+      this.result = xs;
     },
   },
 };
