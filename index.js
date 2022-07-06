@@ -85,7 +85,7 @@ const PopulationBarPlot = {
     async updateGraph() {
       let foo = await getPopulations(this.api, 27,);
 
-      foo = foo['result']['data']==['label'];
+      foo = foo['result']['data']['label:総人口'];
 
       this.result = foo;
     },
