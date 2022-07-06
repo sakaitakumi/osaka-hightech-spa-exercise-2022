@@ -62,7 +62,7 @@ const PrefectureCheckbox = {
   };
   
   const PopulationBarPlot = {
-    props:['spi'],
+    props:['api'],
     data() {
       return {
         populations: [ 100, 90, 80, 70, 60, 50, 40, 30, 20, 10 ],
@@ -70,6 +70,7 @@ const PrefectureCheckbox = {
     },
     /* html */
     template: `
+    <div>{{ api }}</div>
     <div class="container">
       <div
         v-for="population in populations"
@@ -81,6 +82,11 @@ const PrefectureCheckbox = {
   };
   
   const RootComponent = {
+    data(){
+      return{
+        'api':'',
+      };
+    },
     components: {
       PrefectureCheckbox,
       PopulationBarPlot,
