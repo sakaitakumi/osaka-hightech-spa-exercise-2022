@@ -92,7 +92,7 @@ const PopulationBarPlot = {
         ys.push(X.value);
       }
 
-      this.result = ys;
+      this.populations = ys;
     },
   },
 };
