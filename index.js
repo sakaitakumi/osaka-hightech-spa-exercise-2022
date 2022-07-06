@@ -72,7 +72,7 @@ const PrefectureCheckbox = {
     /* html */
     template: `
     <div>{{ result }}</div>
-    <button v-on:click="pGetPopulations">更新</button>
+    <button v-on:click="updateGraph">更新</button>
     <div class="container">
       <div
         v-for="population in populations"
@@ -82,7 +82,7 @@ const PrefectureCheckbox = {
     </div>
     `,
     methods:{
-      async pGetPopulations(){
+      async updateGraph(){
         this.result = await this.getPopulations(this.api,27);
       },
     },
