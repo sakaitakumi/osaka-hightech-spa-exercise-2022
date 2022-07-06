@@ -91,7 +91,7 @@ const PopulationBarPlot = {
         console.log(X.value);
       }
 
-      this.result = xs;
+      this.result = foo;
     },
   },
 };
