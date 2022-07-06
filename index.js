@@ -90,7 +90,7 @@ const PopulationBarPlot = {
       let ys = []
 
       for(const X of xs){
-        ys.push(x.value);
+        ys.push(X.value);
       }
 
       this.result = xs;
