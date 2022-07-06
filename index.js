@@ -83,7 +83,11 @@ const PopulationBarPlot = {
   `,
   methods: {
     async updateGraph() {
-      this.result = await getPopulations(this.api, 27);
+      let foo = await getPopulations(this.api, 27,);
+
+      foo = foo['result'];
+
+      this.result = foo;
     },
   },
 };
