@@ -79,19 +79,22 @@ const PopulationBarPlot = {
     ></div>
   </div>
   `,
-  methods: {
-    async updateGraph() {
-      let xs = await getPopulations(this.api, 27,);
+  methods:{
+    async updateGraph(){
+      let xs = await getPopulations(this.api, 27);
 
+      // JSON から、'result' -> 'data' -> 0 番目 -> 'data'，と辿った箇所を hoge に代入
       xs = xs['result']['data'][0]['data'];
 
-      let ys = []
-
-      for(const X of xs){
-        ys.push(X.value);
+      let values = xs.map(function(ys){
+        return ys["value"];
       }
-
-      this.populations = ys;
+      );
+      this.populations = values;
+      this.populations = this.populations.map((ys) => {
+        return ys / 20000;
+      }
+      );
     },
   },
 };

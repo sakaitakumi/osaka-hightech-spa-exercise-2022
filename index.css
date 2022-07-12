@@ -1,9 +1,14 @@
-.container {
-    display: flex;
-    align-items: flex-end;
-  }
-  
-  .item {
-    background-color: red;
-    width: 20px;
-  }
+input[type=checkbox]{
+  transform: scale(1);
+  margin: 0 6px 0 0;
+}
+
+.container{
+  display: flex;
+  align-items: flex-end;
+}
+
+.item{
+  background-color: red;
+  width: 20px;
+}
