@@ -27,5 +27,5 @@ async function getPrefctures(apiKey) {
     // await というキーワードで待つことができる
     const json = await response.json();
   
-    return json;
+    return json['result']['data'][0]['data'];;
   }
